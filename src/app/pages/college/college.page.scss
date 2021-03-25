@@ -1,0 +1,63 @@
+.tab-button {
+    max-width: 200px;
+}
+  
+::ng-deep ion-icon.icon-button {
+    background: #3c457e !important;
+    color: white !important;
+    border-radius: 50%!important;
+}
+
+:host ::ng-deep .tabs-inner {
+    position: unset!important;
+    contain: size style!important;
+  }
+  
+  .bottom-tab-bar {
+    --background: transparent;
+    --border: 0;
+  }
+  
+  ion-tab-button {
+    --background: #3c457e;
+    --color:white;
+    --color-selected: red;
+    --ripple-color: white;
+  }
+  
+
+.button-center {
+    --background: transparent!important;
+    ion-icon {
+      height: 40px;
+      width: 40px;
+      font-size: 60px;
+    }
+}
+ion-tab-bar {
+    &:before {
+      box-shadow: 0 387px 0 300px #3c457e;
+      position: absolute;
+      margin-top: -48px;
+      padding: 56px;
+      border-radius: 65%;
+      content: '';
+    }
+  }
+  
+.inner-left-btn {
+    border-radius: 0 50% 0 0; // create the curved style on the left side of the center
+}
+
+
+.inner-right-btn {
+    border-radius: 50% 0 0 0; // create the curved style on the right side of the center
+}
+  
+.inner-center-btn {
+    position: absolute;
+    left: calc(50% - 35px); // position your button in the center
+    bottom: 20px; // position your button slightly above the half bezel
+    font-size: 70px;
+    --background: transparent;
+}

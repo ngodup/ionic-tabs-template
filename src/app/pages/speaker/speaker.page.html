@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>speaker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="speaker">
+    <ion-card-content>
+      <img src="{{speaker.profilePic}}">
+      <p>Name : {{ speaker.name }}</p>
+      <p>Email : {{ speaker.email }}</p>
+      <p>Location : {{ speaker.location }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
